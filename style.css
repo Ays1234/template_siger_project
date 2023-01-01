@@ -10,6 +10,7 @@ margin:0px;
 padding: 0px;
 font-family: "Open Sans", sans-serif;
 line-height: 1.5;
+margin: 30px 56px 30px 56px;
 }
 
 
@@ -66,7 +67,14 @@ nav ul li a:hover {
 text-decoration: underline;
 }
 
-
+.menu-btn{
+cursor: pointer;
+position: absolute;
+top: 20px;
+right: 30px;
+z-index: 2;
+display: none;
+}
 
 .btn {
 cursor: pointer;
@@ -93,7 +101,7 @@ align-items: center;
 text-align: center;
 justify-content: flex-end;
 padding-bottom: 50px;
-margin: 30px 56px 30px 56px;
+margin: 30px 0px;
 }
 
 .showcase h2, .showcase p{
@@ -107,7 +115,6 @@ margin-top: 20px;
 
 /* Home Cards */
 .home-cards {
-  margin: 30px 56px 30px 56px;
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-gap: 20px;
@@ -127,4 +134,64 @@ display: inline-block;
 padding-top: 10px;
 color: #0067b8;
 text-transform: uppercase;
+}
+
+/* iklan */
+.iklan{
+height:350px;
+background: url('gambar-1.png') no-repeat center center/cover;
+margin: 30px 0px;
+margin-bottom: 40px;
+}
+
+.iklan .content{
+width:40%;
+padding:50px 0 0 30px;
+}
+
+.iklan p {
+margin: 10px 0 20px;
+}
+
+@media(max-width:700px){
+
+  .menu-btn{
+  display: block;
+  }
+
+  .menu-btn:hover{
+  opacity: 0.5;
+  }
+
+nav .menu ul {
+    display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f2f2f2;
+  width: 50%;
+  height: auto;
+  border-right:#ccc 1px solid ;
+  opacity: 0.9;
+  padding: 30px;
+transform: translateX(-500px);
+  }
+
+  nav .menu ul .tampil {
+transform: translateX(-20px);
+  }
+
+.home-cards{
+grid-template-columns: repeat(2, 1fr);
+}
+
+.iklan .content p{
+  display: none;
+}
+
+.iklan .content h2 {
+margin-bottom: 20px;
+}
+
+
 }
