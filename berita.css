@@ -129,11 +129,11 @@ nav ul li a:hover {
 }
 
 .blog {
-  float: left;
+  position: relative;
 }
 
 .conteudo {
-  width: 600px;
+  width: 1200px;
   padding: 25px;
   margin: 25px auto;
   background: #fff;
