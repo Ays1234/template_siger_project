@@ -14,8 +14,8 @@ body {
 }
 
 .wrapper {
-  width: 1600px;
-  margin: auto;
+  width: 1800px;
+  margin-left: auto;
   position: relative;
 }
 
@@ -40,7 +40,10 @@ nav {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background: #ffffff;
+  background: #1abc9c;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
 }
 
 nav ul {
@@ -52,10 +55,6 @@ nav ul {
 
 nav ul li {
   float: left;
-  background: #1abc9c;
-  -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
-  -moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
-  box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
 }
 
 nav ul li a {
@@ -98,6 +97,8 @@ nav ul li a:hover {
   float: right;
   width: 305px;
   display: grid;
+  grid-gap: 20px;
+  margin: 30px 56px 30px 56px;
 }
 
 .sidebar .widget {
@@ -138,7 +139,7 @@ nav ul li a:hover {
 .conteudo {
   width: 1200px;
   padding: 25px;
-  margin: 25px auto;
+  margin: 5px auto;
   background: #fff;
   border: 1px solid #dedede;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
@@ -251,13 +252,58 @@ nav ul li a:hover {
 
 @media screen and (max-width: 460px) {
 
-  nav.menu ul a {
-    padding: 15px;
-    font-size: 14px;
+  .menu-btn {
+    display: block;
   }
 
-  .sidebar {
-    display: none
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .menu ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: auto;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    font-size: x-small;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .menu li {
+    padding: 5px;
+    border-bottom: #ccc solid 1px;
+    font-size: 12px;
+    float: none;
+    line-height: 40px;
+  }
+
+  .menu.tampil ul {
+    transform: translateX(-20px);
+    height: 1000px;
+  }
+
+  .menu ul li:last-child {
+    border-bottom: 0;
+  }
+
+
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .iklan .content p {
+    display: none;
+  }
+
+  .iklan .content h2 {
+    margin-bottom: 20px;
   }
 
   .post-info {
