@@ -13,32 +13,25 @@ body {
 
 }
 
-table,
-tr,
-td {
-  background-color: LightGoldenRodYellow;
-  font-family: century gothic;
-  color: green;
-  border: 1px solid aqua;
-  padding: 5px;
-  border-collapse: collapse;
+.kartu {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 70px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .03);
+  transition: all .3s;
 }
 
-.h {
-  border: 8px groove yellow;
+.foto {
   padding: 20px;
 }
 
-.posisi {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-top: auto;
-  left: 0;
-  right: 0;
-  top: 100px;
-  bottom: 0;
+tbody {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.biodata {
+  margin-top: 30px;
 }
 
 .wrapper {
