@@ -14,8 +14,8 @@ body {
 }
 
 .wrapper {
-  width: 1600px;
-  margin: auto;
+  width: 1800px;
+  margin-left: auto;
   position: relative;
 }
 
@@ -40,7 +40,10 @@ nav {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  background: #ffffff;
+  background: #1abc9c;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+  box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
 }
 
 nav ul {
@@ -217,6 +220,7 @@ nav ul li a:hover {
   .menu ul li:last-child {
     border-bottom: 0;
   }
+
 
   .home-cards {
     grid-template-columns: repeat(2, 1fr);
