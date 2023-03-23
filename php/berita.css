@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 .sidebar .widget {
   padding: 25px;
-  margin: 0 0 25px;
+  margin: 0 0 12px;
   background: #fff;
   border-bottom: 2px solid #fff;
   transition: all 0.5s ease;
@@ -221,8 +221,15 @@ nav ul li a:hover {
     float: right;
   }
 
+    .blog {
+    width: 100%;
+    margin: 25px 25px 25px 25px;
+  }
+
+ 
+
   .sidebar .widget {
-    padding: 5%;
+    padding: 2%;
   }
 
   nav.menu ul {
